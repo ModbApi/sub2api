@@ -1,0 +1,22 @@
+{
+  "name": "sub2api-community-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": ">=22.0.0" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && node scripts/deploy-cloudflare.mjs",
+    "deploy:check": "npm run build && node scripts/deploy-cloudflare.mjs --help"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": { "wrangler": "^4.127.0" }
+}

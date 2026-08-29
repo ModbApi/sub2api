@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sub2api.site/sitemap.xml
